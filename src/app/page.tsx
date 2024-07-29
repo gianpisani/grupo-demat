@@ -27,7 +27,7 @@ export default function LandingPage() {
         'Desarrollar marcas propias, imagen común',
         'Generar Logística común',
         'Disminuir mínimos de compra',
-        'Aumento de la rentabilidad de cada asociado',
+        'Aumentar la rentabilidad de cada asociado',
       ],
       typeSpeed: 50,
       backSpeed: 40,
@@ -99,7 +99,7 @@ export default function LandingPage() {
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Pilares del Grupo DEMAT
+                Pilares
               </h2>
               <p className="max-w-[700px] text-black font-light md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 A través de estos pilares, nos esforzamos por ser el socio estratégico de confianza para nuestras ferreterías,
@@ -133,14 +133,17 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+              <h2 className="text-6xl font-bold tracking-tighter sm:text-4xl md:text-6xl text-white">
                 Nuestra propuesta
               </h2>
               <p className="max-w-[700px] mx-auto font-light text-black text-justify md:text-xl lg:text-base xl:text-xl">
-                Implementar una Central de compras, con el objetivo de aumentar la competitividad de los socios mediante el apalancamiento de volumen de compras que hoy se encuentra atomizado.
+                Implementar una <span className='font-bold'>Central de compras</span>, con el objetivo de aumentar la competitividad de los socios mediante el apalancamiento de volumen de compras que hoy se encuentra atomizado.
               </p>
             </div>
-              <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl min-h-32">
+              <p className="max-w-[700px] mx-auto font-light text-black text-justify md:text-xl lg:text-base xl:text-xl">
+                Esto nos permitirá,
+              </p>
+              <h1 className="text-6xl font-bold tracking-tight text-black sm:text-6xl min-h-32">
                 <span ref={el}></span>
               </h1>
           </div>
@@ -196,41 +199,41 @@ export default function LandingPage() {
       {/* Servicios Section */}
       <section id="features" className="bg-gray-200 text-primary py-8">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="space-y-2 text-center">
+          <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">Nuestros Servicios</h2>
             <p className="max-w-3xl mx-auto text-black font-light">
               Descubre cómo podemos ayudarte a mejorar la eficiencia y competitividad de tu ferretería.
             </p>
             <div className="flex flex-wrap gap-8 justify-center">
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <Warehouse className="mx-auto h-12 w-12 text-yellow-500" />
                 <h3 className="text-xl font-bold">Compras nacionales</h3>
                 <p className='font-light max-w-[400px]'>
                   Gestión eficiente de inventarios y negociaciones estratégicas con proveedores locales.
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <Ship className="mx-auto h-12 w-12 text-yellow-500" />
                 <h3 className="text-xl font-bold">Compras Internacionales</h3>
                 <p className='font-light max-w-[400px]'>
                 Importación de productos de alta calidad con mejores márgenes.
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <Truck className="mx-auto h-12 w-12 text-yellow-500" />
                 <h3 className="text-xl font-bold">Distribución</h3>
                 <p className='font-light max-w-[400px]'>
                   Optimización de la logística y tiempos de entrega para una mejor eficiencia.
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <TbPackages className="mx-auto h-12 w-12 text-yellow-500" />
                 <h3 className="text-xl font-bold">Almacenamiento</h3>
                 <p className='font-light max-w-[400px]'>
                   Gestión de almacenes y stock para una mejor disponibilidad de productos.
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <ClipboardCheck className="mx-auto h-12 w-12 text-yellow-500" />
                 <h3 className="text-xl font-bold">Desarrollo de marcas propias</h3>
                 <p className='font-light max-w-[400px]'>
@@ -242,12 +245,11 @@ export default function LandingPage() {
         </div>
       </section>
 
-
       {/* Team Section */}
       <section id="team" className="py-8 px-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-8 text-center">
-            <h2 className="text-3xl font-bold tracking-tight">Conoce nuestro equipo</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">Conoce nuestro equipo</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground font-light">
               Nuestro equipo está formado por profesionales con una amplia experiencia en la industria de la ferretería.
             </p>
