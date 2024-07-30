@@ -145,7 +145,7 @@ export default function LandingPage() {
               <p className="max-w-[700px] mx-auto font-light text-black text-justify md:text-xl lg:text-base xl:text-xl">
                 Esto nos permitirá,
               </p>
-              <h1 className="text-6xl font-bold tracking-tight text-black sm:text-6xl min-h-32">
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-black min-h-32">
                 <span ref={el}></span>
               </h1>
           </div>
