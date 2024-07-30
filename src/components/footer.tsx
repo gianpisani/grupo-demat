@@ -1,25 +1,30 @@
-import { FaInstagram, FaMessage } from "react-icons/fa6"
-import Link from "next/link"
-import { MountainIcon } from "lucide-react"
-export default function Footer(){
-    return (
-        <footer className="bg-primary text-primary-foreground">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-8 px-4 md:flex-row md:px-6">
-          <div className="flex items-center">
-            <MountainIcon className="h-6 w-6" />
-            <span className="ml-2 text-lg font-bold">Grupo DEMAT</span>
-            <span className="ml-2 text-sm">© 2024</span>
-          </div>
-          <div className="flex space-x-4">
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
-              <FaInstagram className="h-6 w-6" />
-            </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
-              <FaMessage className="h-6 w-6" />
-            </Link>
-            <Link href="#" className="text-primary-foreground/80 hover:text-primary-fore" prefetch={false} />
-          </div>
+import Link from "next/link";
+import Image from "next/image";
+import logoDematBlanco from "../../public/logo/logo_demat_blanco.png";
+
+export default function Footer() {
+  return (
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-8 px-4 md:flex-row md:px-6">
+        <div className="flex items-center">
+          <Image src={logoDematBlanco} alt="Grupo DEMAT" className="h-8 w-auto" />
+          <span className="ml-2 text-sm">© 2024 Grupo DEMAT</span>
         </div>
-      </footer>
-    )
+        <div className="flex space-x-6">
+          <Link href="/about" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+            Sobre Nosotros
+          </Link>
+          <Link href="/services" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+            Servicios
+          </Link>
+          <Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+            Contacto
+          </Link>
+          <Link href="/privacy-policy" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+            Política de Privacidad
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
 }

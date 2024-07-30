@@ -15,6 +15,8 @@ import PieCharts from '@/components/pie-chart';
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import { TbPackages } from 'react-icons/tb';
+import logoDematOriginal from '../../public/logo/logo_demat_original.png';
+import { Button } from '@headlessui/react';
 
 export default function LandingPage() {
   const el = useRef(null);
@@ -43,25 +45,25 @@ export default function LandingPage() {
 
   return (
     <div className="bg-gray-100 text-black">
-      {/* Hero Section */}
-      <div className="relative h-screen bg-black">
-        <Image 
-          src={ferreteria.src}
-          alt="Hero Image" 
-          layout="fill" 
-          objectFit="cover" 
-          className="opacity-70"
-        />
-        <div className="absolute inset-0 flex items-center justify-center p-2">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-black">Revolucionando la Ferreteria</h1>
-            <p className="mt-4 text-2xl md:text-4xl">Central de Compras para Ferreterías</p>
-            <a href="#services" className="mt-8 inline-block bg-yellow-400 text-black py-3 px-6 rounded-2xl font-bold hover:bg-yellow-500 transition duration-300">
-              Descubre más
-            </a>
-          </div>
-        </div>
+    {/* Hero Section */}
+    <div className="relative h-screen bg-black">
+      <Image 
+        src={ferreteria.src}
+        alt="Hero Image" 
+        layout="fill" 
+        objectFit="cover" 
+        className="opacity-70"
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-2">
+        <Image src={logoDematOriginal} alt="Grupo DEMAT" width={400} height={400} className="mb-4" />
+        <h1 className="text-4xl md:text-6xl font-black text-center text-white">Revolucionando la Ferretería</h1>
+        <p className="mt-4 text-2xl md:text-4xl text-center text-white">Central de Compras para Ferreterías</p>
+        <a href="#services" className="mt-8 inline-block bg-secondary text-white hover:text-black transition-colors duration-500 py-3 px-6 rounded-md font-bold hover:bg-white text-center">
+          Descubre más
+        </a>
       </div>
+    </div>
+
 
       {/* Vision-Mision de Section */}
       <section id="vision-mission" className="py-16">
@@ -129,7 +131,7 @@ export default function LandingPage() {
       </section>
 
       {/* Propuesta Section */}
-      <section className="w-full py-12 h-min-[1000px] text-center bg-yellow-400">
+      <section className="w-full py-12 h-min-[1000px] text-center bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">
@@ -168,27 +170,27 @@ export default function LandingPage() {
             </div>
             <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 md:mt-0">
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <GiWoodPile className="h-8 w-8 text-yellow-500" />
+                <GiWoodPile className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Madera</span>
               </div>
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <Truck className="h-8 w-8 text-yellow-500" />
+                <Truck className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Fletes</span>
               </div>
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <BsTools className="h-8 w-8 text-yellow-500" />
+                <BsTools className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Máquinas y herramientas</span>
               </div>
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <GiWheelbarrow className="h-8 w-8 text-yellow-500" />
+                <GiWheelbarrow className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Carretillas</span>
               </div>
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <Layers className="h-8 w-8 text-yellow-500" />
+                <Layers className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Revestimiento</span>
               </div>
               <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
-                <Grid className="h-8 w-8 text-yellow-500" />
+                <Grid className="h-8 w-8 text-secondary" />
                 <span className="ml-4 text-gray-800 font-light">Cerámicas</span>
               </div>
             </div>
@@ -206,35 +208,35 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-wrap gap-8 justify-center">
               <div className="space-y-2">
-                <Warehouse className="mx-auto h-12 w-12 text-yellow-500" />
+                <Warehouse className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Compras nacionales</h3>
                 <p className='font-light max-w-[400px]'>
                   Gestión eficiente de inventarios y negociaciones estratégicas con proveedores locales.
                 </p>
               </div>
               <div className="space-y-2">
-                <Ship className="mx-auto h-12 w-12 text-yellow-500" />
+                <Ship className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Compras Internacionales</h3>
                 <p className='font-light max-w-[400px]'>
                 Importación de productos de alta calidad con mejores márgenes.
                 </p>
               </div>
               <div className="space-y-2">
-                <Truck className="mx-auto h-12 w-12 text-yellow-500" />
+                <Truck className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Distribución</h3>
                 <p className='font-light max-w-[400px]'>
                   Optimización de la logística y tiempos de entrega para una mejor eficiencia.
                 </p>
               </div>
               <div className="space-y-2">
-                <TbPackages className="mx-auto h-12 w-12 text-yellow-500" />
+                <TbPackages className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Almacenamiento</h3>
                 <p className='font-light max-w-[400px]'>
                   Gestión de almacenes y stock para una mejor disponibilidad de productos.
                 </p>
               </div>
               <div className="space-y-2">
-                <ClipboardCheck className="mx-auto h-12 w-12 text-yellow-500" />
+                <ClipboardCheck className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Desarrollo de marcas propias</h3>
                 <p className='font-light max-w-[400px]'>
                   Creación de marcas exclusivas para mejorar el posicionamiento en el mercado.
@@ -303,7 +305,7 @@ export default function LandingPage() {
       {/* Experiencia Section */}
       <section className="bg-primary py-16 text-center shadow-lg mt-12 px-4">
         <div className="container  mx-auto">
-          <h2 className="text-4xl font-extrabold text-yellow-400">Nuestra Experiencia, Nuestro Compromiso</h2>
+          <h2 className="text-4xl font-extrabold text-secondary">Nuestra Experiencia, Nuestro Compromiso</h2>
           <p className="mt-4 text-lg text-white text-balance font-light">
             El equipo que trabajará en la implementación es un equipo que ya probó el éxito de esta forma de operar en <span className='font-black'>MASISA</span>.
           </p>
@@ -314,21 +316,21 @@ export default function LandingPage() {
           <div className="mt-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
               <div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black">
-                <TrendingUp className="h-12 w-12 mx-auto text-yellow-400" />
+                <TrendingUp className="h-12 w-12 mx-auto text-secondary" />
                 <h4 className="text-xl font-bold mb-2">Mejoras en nivel de servicio</h4>
                 <p className='font-light'>
                 Mejores plazos de entrega, stock y consignación.
                 </p>
               </div>
               <div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black">
-                <Package className="h-12 w-12 mx-auto text-yellow-400" />
+                <Package className="h-12 w-12 mx-auto text-secondary" />
                 <h4 className="text-xl font-bold mb-2">Rediseño de producto</h4>
                 <p className='font-light'>
                   Baja de precios por redefinición de productos
                 </p>
               </div>
               <div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black">
-                <Award className="h-12 w-12 mx-auto text-yellow-400" />
+                <Award className="h-12 w-12 mx-auto text-secondary" />
                 <h4 className="text-xl font-bold mb-2">Productos marca propia</h4>
                 <p className='font-light'>
                 Mejor margen, posicionamiento de marca

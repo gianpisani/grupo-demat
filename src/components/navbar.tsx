@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import Link from "next/link";
 import { Mountain } from "lucide-react";
+import logoDematOriginal from '../../public/logo/logo_demat_original.png';
+import logoDematBlanco from '../../public/logo/logo_demat_blanco.png';
+import Image from "next/image";
+import { Menu } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,8 +31,8 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center" prefetch={false}>
-          <Mountain className="h-6 w-6" />
-          <span className="ml-2 text-lg font-bold">Grupo DEMAT</span>
+          {/* <Image src={logoDematOriginal} alt="Grupo DEMAT" className="h-6 w-auto" /> */}
+          <Image src={logoDematBlanco} alt="Grupo DEMAT" className="h-6 w-auto" />
         </Link>
         <nav className="hidden space-x-4 md:flex">
           <Link href="#" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
@@ -44,12 +48,12 @@ export default function Navbar() {
             Preguntas frecuentes
           </Link>
         </nav>
-        <Button className="hidden md:inline-flex font-bold text-primary bg-yellow-400 hover:bg-yellow-500">Contactanos</Button>
+        <Button className="hidden md:inline-flex font-bold text-primary bg-secondary hover:bg-white">Contactanos</Button>
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden text-yellow-400">
-              <Mountain className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
+            <Button variant="outline" size="icon" className="md:hidden text-secondary">
+              <Menu className="w-6 h-6" />
+              <span className="sr-only">Cerrar menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-64">
