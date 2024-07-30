@@ -5,7 +5,7 @@ import { GiFactory, GiCommercialAirplane, GiTeamUpgrade, GiLogicGateAnd } from '
 import ferreteria from '../../public/ferreteria.jpg';
 import gerente from '../../public/gerente.jpg';
 import carpintero from '../../public/carpintero.jpg';
-import { Award, BadgeCheckIcon, CheckCircleIcon, CheckIcon, GlobeIcon, Leaf, Lightbulb, LightbulbIcon, Package, TrendingUp, Axe, Truck, Hammer, Wrench, Layers, Grid, ClipboardCheck, Warehouse, Ship } from 'lucide-react';
+import { Award, Eye, Goal, CheckCircleIcon, CheckIcon, Package, TrendingUp, Truck, Layers, Grid, ClipboardCheck, Warehouse, Ship } from 'lucide-react';
 import { GiWheelbarrow, GiWoodPile, GiCargoShip } from 'react-icons/gi';
 import { BsTools } from 'react-icons/bs';
 import { User } from 'lucide-react';
@@ -65,25 +65,32 @@ export default function LandingPage() {
     </div>
 
 
-      {/* Vision-Mision de Section */}
-      <section id="vision-mission" className="py-16">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight">Nuestra Visión</h2>
-              <p className="mt-4 text-black font-light">
-              Es convertirnos en la central de compras líder y más confiable del sector ferretero, reconocida por nuestra capacidad de innovación, excelencia en el servicio y contribución al éxito sostenible de nuestras ferreterías asociadas, y que lo más importante es que es que el beneficio sea mayor para el asociado que para la cadena en sí.
-              </p>
+    {/* Vision-Mision Section */}
+    <section id="vision-mission" className="py-16 bg-primary text-white">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid gap-12 md:grid-cols-2">
+          <div className="p-4">
+            <div className="flex items-center mb-4 justify-center">
+              <Eye className="h-8 w-8 text-secondary" />
+              <h2 className="text-4xl font-extrabold ml-4 text-center items-center">Nuestra Visión</h2>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight">Nuestra Misión</h2>
-              <p className="mt-4 text-black font-light">
-                Es potenciar el crecimiento y la competitividad de nuestras ferreterías asociadas, ofreciendo una gestión centralizada y eficiente de compras que garantice productos de alta calidad, precios competitivos y un servicio excepcional.
-              </p>
+            <p className="mt-4 text-lg font-light text-justify">
+              Es convertirnos en la central de compras líder y más confiable del sector ferretero, reconocida por nuestra capacidad de innovación, excelencia en el servicio y contribución al éxito sostenible de nuestras ferreterías asociadas, y que lo más importante es que el beneficio sea mayor para el asociado que para la cadena en sí.
+            </p>
+          </div>
+          <div className="p-4">
+            <div className="flex items-center mb-4 justify-center">
+              <Goal className="h-8 w-8 text-secondary" />
+              <h2 className="text-4xl font-extrabold ml-4 text-center items-center">Nuestra Misión</h2>
             </div>
+            <p className="mt-4 text-lg font-light text-justify">
+              Es potenciar el crecimiento y la competitividad de nuestras ferreterías asociadas, ofreciendo una gestión centralizada y eficiente de compras que garantice productos de alta calidad, precios competitivos y un servicio excepcional.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* Pilares Section */}
       <section className="w-full py-12 bg-white">
@@ -103,7 +110,7 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Pilares
               </h2>
-              <p className="max-w-[700px] text-black font-light md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-justify text-black font-light md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 A través de estos pilares, nos esforzamos por ser el socio estratégico de confianza para nuestras ferreterías,
                 promoviendo su éxito y el fortalecimiento del sector ferretero en su conjunto.
               </p>
@@ -253,7 +260,7 @@ export default function LandingPage() {
           <div className="space-y-8 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">Conoce nuestro equipo</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground font-light">
-              Nuestro equipo está formado por profesionales con una amplia experiencia en la industria de la ferretería.
+              En nuestro equipo, somos profesionales con una amplia experiencia en la industria de la ferretería.
             </p>
             <div className="grid gap-8 md:grid-cols-3">
               <div className="space-y-4">
@@ -307,7 +314,7 @@ export default function LandingPage() {
         <div className="container  mx-auto">
           <h2 className="text-4xl font-extrabold text-secondary">Nuestra Experiencia, Nuestro Compromiso</h2>
           <p className="mt-4 text-lg text-white text-balance font-light">
-            El equipo que trabajará en la implementación es un equipo que ya probó el éxito de esta forma de operar en <span className='font-black'>MASISA</span>.
+            Nuestro equipo ya probó el éxito de esta forma de operar en <span className='font-black'>MASISA</span>.
           </p>
           <p className="text-lg text-white text-balance font-light">
             En <span className='font-black'>Grupo DEMAT</span>, nos comprometemos a ofrecer soluciones innovadoras y sostenibles para mejorar la eficiencia y competitividad de nuestros clientes.
@@ -342,16 +349,16 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonios Section */}
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-50/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-24 lg:px-8">
+        
+        
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-black sm:text-2xl sm:leading-9">
+            <blockquote className="text-center font-semibold leading-8 text-black text-3xl sm:text-4xl sm:leading-9">
               <p>“Este será un proyecto que cambiará la forma de hacer negocios en la industria de la ferretería en Chile”</p>
             </blockquote>
             <figcaption className="mt-10">
-              <img className="mx-auto h-10 w-10 rounded-full" src={gerente.src} alt=""/>
+              <Image width={50} height={50} className="mx-auto h-10 w-10 rounded-full" src={gerente.src} alt="Imagen Gerente General"/>
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                 <div className="font-semibold text-black">Juan Perez</div>
                 <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
