@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-// Importa la fuente Montserrat desde next/font/google
-const montserrat = Montserrat({ subsets: ['latin'] });
+// Importa la fuente Poppins desde next/font/google con el peso especificado
+const poppins = Poppins({ 
+  subsets: ['latin'], 
+  weight: ['200', '600'],
+  style: 'normal'
+});
 
 export const metadata: Metadata = {
   title: "Grupo DEMAT",
@@ -19,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={montserrat.className}>
+      <body className={`${poppins.className} h-screen`}>
         <Navbar />
         {children}
         <Footer />
@@ -27,3 +31,34 @@ export default function RootLayout({
     </html>
   );
 }
+
+// import type { Metadata } from "next";
+// import { Montserrat } from 'next/font/google';
+// import "./globals.css";
+// import Navbar from "@/components/navbar";
+// import Footer from "@/components/footer";
+
+// // Importa la fuente Montserrat desde next/font/google
+// const montserrat = Montserrat({ subsets: ['latin'] });
+
+// export const metadata: Metadata = {
+//   title: "Grupo DEMAT",
+//   description: "Grupo ferretero DEMAT",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="es">
+//       <body className={montserrat.className}>
+//         <Navbar />
+//         {children}
+//         <Footer />
+//       </body>
+//     </html>
+//   );
+// }
+

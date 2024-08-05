@@ -11,16 +11,16 @@ export default function Footer() {
           <span className="ml-2 text-sm">© 2024 Grupo DEMAT</span>
         </div>
         <div className="flex space-x-6">
-          <Link href="/about" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+          <Link href="/about-us" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
             Sobre Nosotros
           </Link>
-          <Link href="/services" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+          {/* <Link href="/services" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
             Servicios
-          </Link>
-          <Link href="/contact" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+          </Link> */}
+          <Link href="https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
             Contacto
           </Link>
-          <Link href="/privacy-policy" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
+          <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
             Política de Privacidad
           </Link>
         </div>

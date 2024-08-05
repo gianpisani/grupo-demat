@@ -17,6 +17,7 @@ import { useEffect, useRef } from 'react';
 import { TbPackages } from 'react-icons/tb';
 import logoDematOriginal from '../../public/logo/logo_demat_original.png';
 import { Button } from '@headlessui/react';
+import Link from 'next/link';
 
 export default function LandingPage() {
   const el = useRef(null);
@@ -58,9 +59,9 @@ export default function LandingPage() {
         <Image src={logoDematOriginal} alt="Grupo DEMAT" width={400} height={400} className="mb-4" />
         <h1 className="text-4xl md:text-6xl font-black text-center text-white">Revolucionando la Ferretería</h1>
         <p className="mt-4 text-2xl md:text-4xl text-center text-white">Central de Compras para Ferreterías</p>
-        <a href="#services" className="mt-8 inline-block bg-secondary text-white hover:text-black transition-colors duration-500 py-3 px-6 rounded-md font-bold hover:bg-white text-center">
+        <Link href="/propuesta" className="mt-8 inline-block bg-secondary text-white hover:text-black transition-colors duration-500 py-3 px-6 rounded-md font-bold hover:bg-white text-center">
           Descubre más
-        </a>
+        </Link>
       </div>
     </div>
 
@@ -176,29 +177,29 @@ export default function LandingPage() {
               />
             </div>
             <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 md:mt-0">
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <GiWoodPile className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Madera</span>
+                <span className="ml-4">Madera</span>
               </div>
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <Truck className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Fletes</span>
+                <span className="ml-4">Fletes</span>
               </div>
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <BsTools className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Máquinas y herramientas</span>
+                <span className="ml-4">Máquinas y herramientas</span>
               </div>
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <GiWheelbarrow className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Carretillas</span>
+                <span className="ml-4">Carretillas</span>
               </div>
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <Layers className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Revestimiento</span>
+                <span className="ml-4">Revestimiento</span>
               </div>
-              <div className="flex items-center p-4 bg-gray-100 rounded-xl shadow">
+              <div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold">
                 <Grid className="h-8 w-8 text-secondary" />
-                <span className="ml-4 text-gray-800 font-light">Cerámicas</span>
+                <span className="ml-4">Cerámicas</span>
               </div>
             </div>
           </div>
