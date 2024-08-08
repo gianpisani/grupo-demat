@@ -12,7 +12,6 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset;
@@ -42,16 +41,16 @@ export default function Navbar() {
         </Link>
         <nav className="hidden space-x-4 md:flex">
           <Link href="/propuesta" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
-            Propuestas
+            Propuesta
           </Link>
           <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
             Sobre nosotros
           </Link>
-          <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
+          {/* <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
             Preguntas frecuentes
-          </Link>
+          </Link> */}
         </nav>
-        <Link href='https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0' className="hidden px-3 py-2 rounded-md text-sm md:inline-flex font-bold text-primary bg-secondary hover:bg-white">Contáctanos</Link>
+        <Link href="mailto:grupo@demat.cl" className="hidden px-3 py-2 rounded-md text-sm md:inline-flex font-bold text-primary bg-secondary hover:bg-white">Contáctanos</Link>
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="md:hidden text-secondary">
@@ -62,14 +61,14 @@ export default function Navbar() {
           <SheetContent side="right" className="w-64">
             <div className="flex flex-col items-start space-y-4 p-4">
               <Link href="/propuesta" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
-                Propuestas
+                Propuesta
               </Link>
               <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
                 Sobre Nosotros
               </Link>
-              <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
+              {/* <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
                 Preguntas frecuentes
-              </Link>
+              </Link> */}
             </div>
           </SheetContent>
         </Sheet>
