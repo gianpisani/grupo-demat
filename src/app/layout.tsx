@@ -8,8 +8,7 @@ import favicon from './favicon.ico';
 // Importa la fuente Poppins desde next/font/google con el peso especificado
 const poppins = Poppins({ 
   subsets: ['latin'], 
-  weight: ['200', '600'],
-  style: 'normal'
+  weight: ['200', '600']
 });
 
 export const metadata: Metadata = {

@@ -43,9 +43,9 @@ export default function Navbar() {
           <Link href="/propuesta" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
             Propuesta
           </Link>
-          <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
+          {/* <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
             Sobre nosotros
-          </Link>
+          </Link> */}
           {/* <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-bold hover:bg-primary/20 hover:bg-white hover:text-black" prefetch={false}>
             Preguntas frecuentes
           </Link> */}
@@ -63,9 +63,9 @@ export default function Navbar() {
               <Link href="/propuesta" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
                 Propuesta
               </Link>
-              <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
+              {/* <Link href="/about-us" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
                 Sobre Nosotros
-              </Link>
+              </Link> */}
               {/* <Link href="/faq" className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted" prefetch={false}>
                 Preguntas frecuentes
               </Link> */}

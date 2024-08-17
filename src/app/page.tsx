@@ -151,15 +151,15 @@ export default function LandingPage() {
                   <CheckIcon className="h-5 w-5 text-black font-light" />
                   <span className="text-black font-light">Optimización de la logística</span>
                 </motion.li>
-                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.4 }}>
+                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <CheckIcon className="h-5 w-5 text-primary" />
                   <span className="text-black font-light">Calidad y Variedad</span>
                 </motion.li>
-                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.5 }}>
+                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <CheckIcon className="h-5 w-5 text-primary" />
                   <span className="text-black font-light">Innovación y Mejora continua</span>
                 </motion.li>
-                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.6 }}>
+                <motion.li className="flex items-center gap-3 transition-transform transform hover:scale-105 hover:text-primary" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <CheckIcon className="h-5 w-5 text-primary" />
                   <span className="text-black font-light">Desarollo Sostenible</span>
                 </motion.li>
@@ -290,19 +290,19 @@ export default function LandingPage() {
                   <Truck className="h-8 w-8 text-secondary" />
                   <span className="ml-4">Fletes</span>
                 </motion.div>
-                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.4 }}>
+                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <BsTools className="h-8 w-8 text-secondary" />
                   <span className="ml-4">Máquinas y herramientas</span>
                 </motion.div>
-                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: 25 }} whileInView={{ x: 0 }} transition={{ delay: 0.4 }}>
+                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: 25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <GiWheelbarrow className="h-8 w-8 text-secondary" />
                   <span className="ml-4">Carretillas</span>
                 </motion.div>
-                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.5 }}>
+                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: -25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <Layers className="h-8 w-8 text-secondary" />
                   <span className="ml-4">Revestimiento</span>
                 </motion.div>
-                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: 25 }} whileInView={{ x: 0 }} transition={{ delay: 0.5 }}>
+                <motion.div className="flex items-center p-4 bg-gray-100 text-gray-800 font-light rounded-xl shadow transition-transform transform hover:scale-105 hover:bg-primary hover:text-white hover:font-bold" initial={{ x: 25 }} whileInView={{ x: 0 }} transition={{ delay: 0.3 }}>
                   <Grid className="h-8 w-8 text-secondary" />
                   <span className="ml-4">Cerámicas</span>
                 </motion.div>
@@ -336,28 +336,28 @@ export default function LandingPage() {
                   Gestión eficiente de inventarios y negociaciones estratégicas con proveedores locales.
                 </p>
               </motion.div>
-              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4 }}>
+              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
                 <Ship className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Compras Internacionales</h3>
                 <p className='font-light max-w-[400px]'>
                 Importación de productos de alta calidad con mejores márgenes.
                 </p>
               </motion.div>
-              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }}>
+              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
                 <Truck className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Distribución</h3>
                 <p className='font-light max-w-[400px]'>
                   Optimización de la logística y tiempos de entrega para una mejor eficiencia.
                 </p>
               </motion.div>
-              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
                 <TbPackages className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Almacenamiento</h3>
                 <p className='font-light max-w-[400px]'>
                   Gestión de almacenes y stock para una mejor disponibilidad de productos.
                 </p>
               </motion.div>
-              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.7 }}>
+              <motion.div className="space-y-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
                 <ClipboardCheck className="mx-auto h-12 w-12 text-secondary" />
                 <h3 className="text-xl font-bold">Desarrollo de marcas propias</h3>
                 <p className='font-light max-w-[400px]'>
@@ -385,46 +385,31 @@ export default function LandingPage() {
             <div className="space-y-8 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">Conoce nuestro equipo</h2>
               <p className="max-w-3xl mx-auto text-muted-foreground font-light">
-                En nuestro equipo, somos profesionales con una amplia experiencia en la industria de la ferretería.
+                Somos profesionales con una amplia experiencia en la industria de la ferretería.
               </p>
-              <div className="grid gap-8 md:grid-cols-3">
-                <motion.div className="space-y-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-                  <Image
-                    src={gerente.src}
-                    width={200}
-                    height={200}
-                    alt="Team Member 1"
-                    className="mx-auto rounded-full object-cover shadow-xl"
-                    style={{ width: '200px', height: '200px' }}
-                  />
-                  <h3 className="text-xl font-bold">Persona 1</h3>
-                  <p className="text-muted-foreground font-light">Gerente General</p>
-                </motion.div>
-                <motion.div className="space-y-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4 }}>
-                  <Image
-                    src={gerente.src}
-                    width={200}
-                    height={200}
-                    alt="Team Member 2"
-                    className="mx-auto rounded-full object-cover shadow-xl"
-                    style={{ width: '200px', height: '200px' }}
-                  />
-                  <h3 className="text-xl font-bold">Persona 2</h3>
-                  <p className="text-muted-foreground font-light">Gerente de Administración y Finanzas</p>
-                </motion.div>
-                <motion.div className="space-y-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }}>
-                  <Image
-                    src={gerente.src}
-                    width={200}
-                    height={200}
-                    alt="Team Member 3"
-                    className="mx-auto rounded-full object-cover shadow-xl"
-                    style={{ width: '200px', height: '200px' }}
-                  />
-                  <h3 className="text-xl font-bold">Persona 3</h3>
-                  <p className="text-muted-foreground font-light">Gerente Comercial</p>
-                </motion.div>
+              <div className="space-y-8">
+              <div className="space-y-8">
+                <h2 className="text-2xl font-bold text-center">Nuestros Socios</h2>
+                <div className="space-y-8 text-center">
+                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+                    <Image
+                      src={gerente.src}
+                      width={600}
+                      height={400}
+                      alt="Nuestros Socios"
+                      className="mx-auto rounded-lg object-cover shadow-xl"
+                      style={{ width: '100%', maxWidth: '600px', height: 'auto' }}
+                    />
+                  </motion.div>
+                  <div className="grid gap-8 md:grid-cols-3">
+                    <h3 className="text-3xl font-semibold">Rolando Dewulf</h3>
+                    <h3 className="text-3xl font-semibold">Sandra Contreras</h3>
+                    <h3 className="text-3xl font-semibold">Juan Manuel Jimenez</h3>
+                  </div>
+                </div>
               </div>
+          </div>
+
             </div>
           </div>
         </motion.section>
@@ -456,14 +441,14 @@ export default function LandingPage() {
                 Mejores plazos de entrega, stock y consignación.
                 </p>
               </motion.div>
-              <motion.div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }}>
+              <motion.div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4 }}>
                 <Package className="h-12 w-12 mx-auto text-secondary" />
                 <h4 className="text-xl font-bold mb-2">Rediseño de producto</h4>
                 <p className='font-light'>
                   Baja de precios por redefinición de productos
                 </p>
               </motion.div>
-              <motion.div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.7 }}>
+              <motion.div className="bg-gray-100 p-6 shadow-xl rounded-2xl text-black" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }}>
                 <Award className="h-12 w-12 mx-auto text-secondary" />
                 <h4 className="text-xl font-bold mb-2">Productos marca propia</h4>
                 <p className='font-light'>
