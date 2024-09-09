@@ -9,6 +9,11 @@ export default function Footer() {
         <div className="flex items-center">
           <Image src={logoDematBlanco} alt="Grupo DEMAT" className="h-8 w-auto" />
           <span className="ml-2 text-sm">© 2024 Grupo DEMAT</span>
+          
+
+        </div>
+        <div>
+        <span className="text-xl font-bold">contacto@demat.cl</span>
         </div>
         <div className="flex space-x-6">
           <Link href="/about-us" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
@@ -18,10 +23,7 @@ export default function Footer() {
             Servicios
           </Link> */}
           <Link href="https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
-            Contacto
-          </Link>
-          <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground" prefetch={false}>
-            Política de Privacidad
+            Contacto Whatsapp
           </Link>
         </div>
       </div>

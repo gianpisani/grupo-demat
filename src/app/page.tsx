@@ -4,7 +4,9 @@ import { FaShippingFast, FaGlobe, FaWarehouse, FaTrademark } from 'react-icons/f
 import { GiFactory, GiTeamUpgrade } from 'react-icons/gi';
 import ferreteria from '../../public/ferreteria.jpg';
 import gerente from '../../public/gerente.jpg';
-import { Eye, Goal, CheckIcon, TrendingUp, Package, Award, Warehouse, Ship, Truck, ClipboardCheck, Layers, Grid } from 'lucide-react';
+import grupodemat from '../../public/grupodemat.jpg';
+import contenedores from '../../public/contenedores.jpg';
+import { Eye, Goal, CheckIcon, TrendingUp, Package, Warehouse, Ship, Truck, ClipboardCheck, Layers, Grid, Briefcase, UserCheck, Award } from 'lucide-react';
 import { GiWheelbarrow, GiWoodPile } from 'react-icons/gi';
 import { BsTools } from 'react-icons/bs';
 import { TbPackages } from 'react-icons/tb';
@@ -128,7 +130,7 @@ export default function LandingPage() {
           <div className="container grid grid-cols-1 px-4 md:grid-cols-2 md:gap-12 md:px-6">
             <motion.div className="flex w-full p-2" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
               <Image
-                src={ferreteria.src}
+                src={contenedores.src}
                 width="400"
                 height="400"
                 layout="responsive"
@@ -194,7 +196,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Disminuir precios de compras</h3>
                     </div>
                   </motion.div>
@@ -204,7 +206,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Efectuar importaciones</h3>
                     </div>
                   </motion.div>
@@ -214,7 +216,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Desarrollar marcas propias, imagen común</h3>
                     </div>
                   </motion.div>
@@ -224,7 +226,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Generar Logística común</h3>
                     </div>
                   </motion.div>
@@ -234,7 +236,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Disminuir mínimos de compra</h3>
                     </div>
                   </motion.div>
@@ -244,7 +246,7 @@ export default function LandingPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <div className="bg-black p-4 rounded-lg">
+                    <div className="bg-primary p-4 rounded-lg">
                       <h3 className="text-3xl text-white font-bold">Aumentar la rentabilidad de cada asociado</h3>
                     </div>
                   </motion.div>
@@ -371,49 +373,71 @@ export default function LandingPage() {
       </div>
       
 
-      {/* Team Section */}
-      <div className='bg-white'>
-        <motion.section 
-          id="team" 
-          className="py-8 px-16 bg-white"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="space-y-8 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black">Conoce nuestro equipo</h2>
-              <p className="max-w-3xl mx-auto text-muted-foreground font-light">
-                Somos profesionales con una amplia experiencia en la industria de la ferretería.
-              </p>
-              <div className="space-y-8">
-              <div className="space-y-8">
-                <h2 className="text-2xl font-bold text-center">Nuestros Socios</h2>
-                <div className="space-y-8 text-center">
-                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-                    <Image
-                      src={gerente.src}
-                      width={600}
-                      height={400}
-                      alt="Nuestros Socios"
-                      className="mx-auto rounded-lg object-cover shadow-xl"
-                      style={{ width: '100%', maxWidth: '600px', height: 'auto' }}
-                    />
-                  </motion.div>
-                  <div className="grid gap-8 md:grid-cols-3">
-                    <h3 className="text-3xl font-semibold">Rolando Dewulf</h3>
-                    <h3 className="text-3xl font-semibold">Sandra Contreras</h3>
-                    <h3 className="text-3xl font-semibold">Juan Manuel Jimenez</h3>
-                  </div>
-                </div>
-              </div>
-          </div>
+      <div className="bg-white py-12">
+      <motion.section
+        id="team"
+        className="container mx-auto max-w-7xl px-4 md:px-6 lg:px-8"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        {/* Title and Intro */}
+        <div className="text-center space-y-6">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-gray-900">
+            Conoce nuestro equipo
+          </h2>
+          <p className="max-w-2xl mx-auto text-lg text-gray-600">
+            Somos profesionales con una amplia experiencia en la industria de la ferretería, 
+            comprometidos en entregar soluciones eficientes y de calidad.
+          </p>
+        </div>
 
+        {/* Image Section */}
+        <div className="mt-10 flex justify-center">
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            whileInView={{ opacity: 1 }} 
+            transition={{ delay: 0.3 }}
+            className="aspect-w-16 aspect-h-9 mx-auto"
+          >
+            <Image
+              src={grupodemat.src}
+              alt="Nuestros Socios"
+              width={400}
+              height={450}
+              className="rounded-lg object-cover shadow-lg"
+            />
+          </motion.div>
+        </div>
+
+        {/* Socios Section */}
+        <div className="mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+            
+            {/* Socio 1 */}
+            <div className="space-y-4">
+              <h4 className="text-2xl font-semibold text-gray-900">Juan Manuel Jimenez</h4>
+              <p className="text-sm text-gray-600">Socio</p>
+            </div>
+            
+            {/* Socio 2 */}
+            <div className="space-y-4">
+
+              <h4 className="text-2xl font-semibold text-gray-900">Sandra Contreras</h4>
+              <p className="text-sm text-gray-600">Socio</p>
+            </div>
+            
+            {/* Socio 3 */}
+            <div className="space-y-4">
+              <h4 className="text-2xl font-semibold text-gray-900">Rolando Dewulf</h4>
+              <p className="text-sm text-gray-600">Socio</p>
             </div>
           </div>
-        </motion.section>
-      </div>
+        </div>
+      </motion.section>
+    </div>
+
 
       {/* Experiencia Section */}
       <motion.section 
@@ -476,11 +500,11 @@ export default function LandingPage() {
             <figcaption className="mt-10">
               <Image width={50} height={50} className="mx-auto h-10 w-10 rounded-full" src={gerente.src} alt="Imagen Gerente General"/>
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-black">Juan Perez</div>
+                <div className="font-semibold text-black">Sandra Contreras</div>
                 <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
                   <circle cx="1" cy="1" r="1" />
                 </svg>
-                <div className="text-gray-600 font-light">CEO, Grupo DEMAT</div>
+                <div className="text-gray-600 font-light">Socio, Grupo DEMAT</div>
               </div>
             </figcaption>
           </figure>

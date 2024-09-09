@@ -50,7 +50,7 @@ export default function Navbar() {
             Preguntas frecuentes
           </Link> */}
         </nav>
-        <Link href="mailto:grupo@demat.cl" className="hidden px-3 py-2 rounded-md text-sm md:inline-flex font-bold text-primary bg-secondary hover:bg-white">Contáctanos</Link>
+        <Link href="mailto:contacto@demat.cl" className="hidden px-3 py-2 rounded-md text-sm md:inline-flex font-bold text-primary bg-secondary hover:bg-white">Contáctanos</Link>
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="md:hidden text-secondary">

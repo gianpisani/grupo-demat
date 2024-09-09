@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import teamImage from '../../../public/gerente.jpg';
+import teamImage from '../../../public/grupodemat.jpg';
 
 export default function AboutUsPage() {
   return (
