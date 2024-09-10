@@ -498,13 +498,8 @@ export default function LandingPage() {
               <p>“Este será un proyecto que cambiará la forma de hacer negocios en la industria de la ferretería en Chile”</p>
             </blockquote>
             <figcaption className="mt-10">
-              <Image width={50} height={50} className="mx-auto h-10 w-10 rounded-full" src={gerente.src} alt="Imagen Gerente General"/>
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-black">Sandra Contreras</div>
-                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" className="fill-gray-900">
-                  <circle cx="1" cy="1" r="1" />
-                </svg>
-                <div className="text-gray-600 font-light">Socio, Grupo DEMAT</div>
+                <div className="text-gray-600 font-light">Socios, Grupo DEMAT</div>
               </div>
             </figcaption>
           </figure>
