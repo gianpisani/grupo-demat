@@ -418,20 +418,20 @@ export default function LandingPage() {
             {/* Socio 1 */}
             <div className="space-y-4">
               <h4 className="text-2xl font-semibold text-gray-900">Juan Manuel Jimenez</h4>
-              <p className="text-sm text-gray-600">Socio</p>
+              <p className="text-sm text-gray-600">Director</p>
             </div>
             
             {/* Socio 2 */}
             <div className="space-y-4">
 
               <h4 className="text-2xl font-semibold text-gray-900">Sandra Contreras</h4>
-              <p className="text-sm text-gray-600">Socio</p>
+              <p className="text-sm text-gray-600">Director</p>
             </div>
             
             {/* Socio 3 */}
             <div className="space-y-4">
               <h4 className="text-2xl font-semibold text-gray-900">Rolando Dewulf</h4>
-              <p className="text-sm text-gray-600">Socio</p>
+              <p className="text-sm text-gray-600">Director</p>
             </div>
           </div>
         </div>
@@ -499,7 +499,7 @@ export default function LandingPage() {
             </blockquote>
             <figcaption className="mt-10">
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="text-gray-600 font-light">Socios, Grupo DEMAT</div>
+                <div className="text-gray-600 font-light">Directores, Grupo DEMAT</div>
               </div>
             </figcaption>
           </figure>
