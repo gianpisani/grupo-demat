@@ -450,7 +450,7 @@ export default function LandingPage() {
         <div className="container  mx-auto">
           <h2 className="text-4xl font-extrabold text-secondary">Nuestra Experiencia, Nuestro Compromiso</h2>
           <p className="mt-4 text-lg text-white text-balance font-light">
-            Nuestro equipo ya probó el éxito de esta forma de operar en la industria de la ferretería.
+            Nuestro equipo ya probó el éxito de esta forma de operar en una multinacional.
           </p>
           <p className="text-lg text-white text-balance font-light">
             En <span className='font-black'>Grupo DEMAT</span>, nos comprometemos a ofrecer soluciones innovadoras y sostenibles para mejorar la eficiencia y competitividad de nuestros clientes.
