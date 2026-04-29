@@ -95,21 +95,11 @@ export default function LandingPage() {
             <span className="text-secondary">la Ferretería</span>
           </motion.h1>
 
-          <motion.p
-            className="mt-8 text-lg md:text-xl text-white/70 font-light max-w-2xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.85, ease: [0.22, 1, 0.36, 1] }}
-          >
-            Únete al poder de compra colectivo y lleva tu ferretería al siguiente nivel
-            de competitividad y rentabilidad.
-          </motion.p>
-
           <motion.div
-            className="mt-8 flex flex-col sm:flex-row gap-4 justify-center"
+            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.85, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <a
               href="#propuesta"
@@ -127,18 +117,46 @@ export default function LandingPage() {
           </motion.div>
         </div>
 
+        {/* Trusted by — logos dentro del hero */}
+        <motion.div
+          className="absolute bottom-16 left-0 right-0 z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.85, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <p className="text-center text-[10px] sm:text-xs font-medium uppercase tracking-[0.25em] text-white/30 mb-4">
+            Ferreterías que confían en nosotros
+          </p>
+          <div className="flex items-center justify-center gap-8 sm:gap-12 md:gap-16 px-6">
+            {[
+              { src: '/asociados/ferreteria-mas-logo.png', alt: 'Ferretería MAS', h: 'h-9 sm:h-11', filter: 'brightness-0 invert' },
+              { src: '/asociados/placacentro-logo.png', alt: 'Placacentro Mafasil', h: 'h-5 sm:h-7', filter: '' },
+              { src: '/asociados/ferrejardin-logo.png', alt: 'Ferre Jardín', h: 'h-9 sm:h-11', filter: 'brightness-0 invert' },
+            ].map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={140}
+                height={50}
+                className={`${logo.h} w-auto object-contain ${logo.filter} opacity-40 hover:opacity-70 transition-opacity duration-300`}
+              />
+            ))}
+          </div>
+        </motion.div>
+
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
         >
           <motion.div
-            animate={{ y: [0, 8, 0] }}
+            animate={{ y: [0, 6, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <ChevronDown className="h-6 w-6 text-white/40" />
+            <ChevronDown className="h-5 w-5 text-white/25" />
           </motion.div>
         </motion.div>
       </section>
@@ -637,6 +655,128 @@ export default function LandingPage() {
         </div>
 
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════
+          ASOCIADOS — Ferreterías que confían en nosotros
+      ═══════════════════════════════════════════════════════════════ */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <motion.div
+            className="text-center max-w-3xl mx-auto mb-12"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+          >
+            <div className="flex items-center gap-3 justify-center mb-4">
+              <div className="w-10 h-[2px] bg-secondary" />
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Asociados</span>
+              <div className="w-10 h-[2px] bg-secondary" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-primary tracking-tight">
+              Ferreterías que confían en nosotros
+            </h2>
+            <p className="mt-5 text-muted-foreground font-light leading-relaxed max-w-xl mx-auto">
+              Empresas de distintas regiones de Chile que ya forman parte del Grupo DEMAT.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                name: 'Ferretería MAS',
+                location: 'San Antonio, Valparaíso',
+                logo: '/asociados/ferreteria-mas-logo.png',
+                logoFilter: '',
+                photo: '/asociados/ferreteria-mas-store.webp',
+                desc: 'Amplia variedad de productos, desde construcción hasta remodelación. Despacho gratuito en la zona.',
+                url: 'https://www.ferreteriamas.cl',
+              },
+              {
+                name: 'Placacentro Mafasil',
+                location: 'San Vicente de Tagua Tagua, O\'Higgins',
+                logo: '/asociados/placacentro-logo.png',
+                logoFilter: 'brightness-0',
+                photo: '/asociados/placacentro-store.jpg',
+                desc: 'Centro especializado en maderas y materiales de construcción, parte de la red Placacentro Masisa.',
+                url: 'https://placacentro.com/blog/local/placacentro-masisa-mafasil/',
+              },
+              {
+                name: 'Ferre Jardín',
+                location: 'Curacaví, Región Metropolitana',
+                logo: '/asociados/ferrejardin-logo.png',
+                logoFilter: '',
+                photo: '/asociados/ferrejardin-store.webp',
+                desc: 'Ferretería integral con herramientas, materiales de construcción, jardín y equipamiento profesional.',
+                url: 'https://www.ferrejardin.cl',
+              },
+            ].map((partner, i) => (
+              <motion.a
+                key={partner.name}
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative rounded-xl bg-white border border-gray-100 hover:border-secondary/20 shadow-sm hover:shadow-xl transition-all duration-300 block overflow-hidden"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={i}
+                variants={fadeUp}
+              >
+                {/* Store photo */}
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={partner.photo}
+                    alt={partner.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  {/* Logo badge */}
+                  <div className="absolute bottom-3 left-4 bg-white rounded-lg p-2 shadow-md">
+                    <Image
+                      src={partner.logo}
+                      alt={`Logo ${partner.name}`}
+                      width={80}
+                      height={32}
+                      className={`h-6 w-auto object-contain ${partner.logoFilter}`}
+                    />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <h3 className="text-lg font-bold text-primary group-hover:text-secondary transition-colors duration-300">{partner.name}</h3>
+                      <p className="text-xs text-secondary font-medium mt-0.5">{partner.location}</p>
+                    </div>
+                    <ArrowRight className="h-4 w-4 text-gray-300 group-hover:text-secondary group-hover:translate-x-1 transition-all duration-300 mt-1 flex-shrink-0" />
+                  </div>
+                  <p className="text-sm text-muted-foreground font-light leading-relaxed mt-3">{partner.desc}</p>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+
+          {/* More partners coming */}
+          <motion.div
+            className="mt-10 text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={3}
+            variants={fadeUp}
+          >
+            <p className="text-sm text-muted-foreground/60 font-light">
+              Y más ferreterías sumándose a lo largo de Chile
+            </p>
+          </motion.div>
+        </div>
       </section>
 
 
