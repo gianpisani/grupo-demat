@@ -47,7 +47,7 @@ export default function LandingPage() {
       {/* ═══════════════════════════════════════════════════════════════
           HERO — Pantalla completa, impacto inmediato
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[580px] flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <Image
           src={ferreteria.src}
@@ -70,23 +70,24 @@ export default function LandingPage() {
               alt="Grupo DEMAT"
               width={320}
               height={320}
-              className="mx-auto mb-8 drop-shadow-2xl"
+              className="mx-auto mb-6 sm:mb-8 drop-shadow-2xl w-[180px] sm:w-[240px] md:w-[300px] lg:w-[320px] h-auto"
             />
           </motion.div>
 
           <motion.div
-            className="inline-block mb-6"
+            className="inline-block mb-4 sm:mb-6"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="inline-block text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.25em] text-secondary border border-secondary/30 px-4 sm:px-5 py-2 rounded-full whitespace-nowrap">
-              Central de Compras para Ferreterías
+            <span className="inline-flex items-center gap-2 text-[11px] sm:text-xs md:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.3em] text-secondary/90 bg-secondary/10 backdrop-blur-sm border border-secondary/20 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full whitespace-nowrap">
+              <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+              Red Ferretera
             </span>
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[0.95]"
+            className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[0.95]"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -96,21 +97,21 @@ export default function LandingPage() {
           </motion.h1>
 
           <motion.div
-            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
+            className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <a
               href="#propuesta"
-              className="group inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-10 py-4 rounded-md text-sm uppercase tracking-widest transition-all duration-300 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30"
+              className="group inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30"
             >
               Descubre más
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <Link
               href="https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0"
-              className="inline-flex items-center justify-center gap-3 border-2 border-white/20 hover:border-white/40 text-white font-medium px-10 py-4 rounded-md text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-3 border-2 border-white/20 hover:border-white/40 text-white font-medium px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300"
             >
               Contáctanos
             </Link>
@@ -119,7 +120,7 @@ export default function LandingPage() {
 
         {/* Trusted by — logos dentro del hero */}
         <motion.div
-          className="absolute bottom-16 left-0 right-0 z-10"
+          className="absolute bottom-12 sm:bottom-16 left-0 right-0 z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.85, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
