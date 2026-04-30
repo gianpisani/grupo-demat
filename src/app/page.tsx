@@ -117,9 +117,9 @@ export default function LandingPage() {
           </motion.div>
         </div>
 
-        {/* Trusted by — logos dentro del hero */}
+        {/* Trusted by — logos dentro del hero, oculto en mobile */}
         <motion.div
-          className="absolute bottom-12 sm:bottom-16 left-0 right-0 z-10"
+          className="absolute bottom-16 left-0 right-0 z-10 hidden sm:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.85, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -147,7 +147,7 @@ export default function LandingPage() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 hidden sm:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
