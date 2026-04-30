@@ -47,7 +47,7 @@ export default function LandingPage() {
       {/* ═══════════════════════════════════════════════════════════════
           HERO — Pantalla completa, impacto inmediato
       ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[580px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[580px] flex flex-col overflow-hidden">
         {/* Background image */}
         <Image
           src={ferreteria.src}
@@ -59,67 +59,70 @@ export default function LandingPage() {
         {/* Overlay — sutil, deja ver la foto real */}
         <div className="absolute inset-0 bg-black/55" />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <Image
-              src={logoDematOriginal}
-              alt="Grupo DEMAT"
-              width={320}
-              height={320}
-              className="mx-auto mb-6 sm:mb-8 drop-shadow-2xl w-[180px] sm:w-[240px] md:w-[300px] lg:w-[320px] h-auto"
-            />
-          </motion.div>
-
-          <motion.div
-            className="inline-block mb-4 sm:mb-6"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <span className="inline-block text-[11px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-white/70 whitespace-nowrap">
-              Red Ferretera
-            </span>
-          </motion.div>
-
-          <motion.h1
-            className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[0.95]"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          >
-            Transformando{' '}
-            <span className="text-secondary">la Ferretería</span>
-          </motion.h1>
-
-          <motion.div
-            className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <a
-              href="#propuesta"
-              className="group inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30"
+        {/* Main content — crece para ocupar el espacio disponible */}
+        <div className="relative z-10 flex-1 flex items-center justify-center">
+          <div className="max-w-5xl mx-auto px-6 text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             >
-              Descubre más
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <Link
-              href="https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0"
-              className="inline-flex items-center justify-center gap-3 border-2 border-white/20 hover:border-white/40 text-white font-medium px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300"
+              <Image
+                src={logoDematOriginal}
+                alt="Grupo DEMAT"
+                width={320}
+                height={320}
+                className="mx-auto mb-6 sm:mb-8 drop-shadow-2xl w-[180px] sm:w-[240px] md:w-[300px] lg:w-[320px] h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              className="inline-block mb-4 sm:mb-6"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
-              Contáctanos
-            </Link>
-          </motion.div>
+              <span className="inline-block text-[11px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-white/70 whitespace-nowrap">
+                Red Ferretera
+              </span>
+            </motion.div>
+
+            <motion.h1
+              className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[0.95]"
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            >
+              Transformando{' '}
+              <span className="text-secondary">la Ferretería</span>
+            </motion.h1>
+
+            <motion.div
+              className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.85, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <a
+                href="#propuesta"
+                className="group inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30"
+              >
+                Descubre más
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <Link
+                href="https://api.whatsapp.com/send/?phone=56981882271&text&type=phone_number&app_absent=0"
+                className="inline-flex items-center justify-center gap-3 border-2 border-white/20 hover:border-white/40 text-white font-medium px-8 sm:px-10 py-3.5 sm:py-4 rounded-md text-xs sm:text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300"
+              >
+                Contáctanos
+              </Link>
+            </motion.div>
+          </div>
         </div>
 
-        {/* Trusted by — logos dentro del hero, oculto en mobile */}
+        {/* Trusted by — logos al fondo del hero, en flujo normal */}
         <motion.div
-          className="absolute bottom-16 left-0 right-0 z-10 hidden sm:block"
+          className="relative z-10 pb-10 pt-4 flex-shrink-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.85, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
@@ -143,21 +146,6 @@ export default function LandingPage() {
               />
             ))}
           </div>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 hidden sm:block"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <ChevronDown className="h-5 w-5 text-white/25" />
-          </motion.div>
         </motion.div>
       </section>
 
